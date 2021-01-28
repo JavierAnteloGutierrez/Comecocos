@@ -43,6 +43,13 @@ Partial Public Class MainWindow
     Inherits System.Windows.Window
     Implements System.Windows.Markup.IComponentConnector
     
+    
+    #ExternalSource("..\..\MainWindow.xaml",14)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents title As System.Windows.Controls.RowDefinition
+    
+    #End ExternalSource
+    
     Private _contentLoaded As Boolean
     
     '''<summary>
@@ -70,6 +77,10 @@ Partial Public Class MainWindow
      System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity"),  _
      System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")>  _
     Sub System_Windows_Markup_IComponentConnector_Connect(ByVal connectionId As Integer, ByVal target As Object) Implements System.Windows.Markup.IComponentConnector.Connect
+        If (connectionId = 1) Then
+            Me.title = CType(target,System.Windows.Controls.RowDefinition)
+            Return
+        End If
         Me._contentLoaded = true
     End Sub
 End Class
