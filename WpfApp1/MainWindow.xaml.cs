@@ -34,5 +34,17 @@ namespace WpfApp1
             
 
         }
+
+        private void Salir(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Creditos(object sender, RoutedEventArgs e)
+        {
+            creditos MiVentana = new creditos();
+            this.Close();
+            MiVentana.ShowDialog();
+        }
     }
 }

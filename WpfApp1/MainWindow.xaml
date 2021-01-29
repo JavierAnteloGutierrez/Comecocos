@@ -24,8 +24,8 @@
         </TextBlock>
         <Button Margin="256,0,269,10" Grid.Row="2">OPCIONES</Button>
 
-        <Button Margin="256,0,269,10" Grid.Row="3">CREDITOS</Button>
-        <Button Margin="256,0,269,10" Grid.Row="4" Content="SALIR"/>
+        <Button Margin="256,0,269,10" Grid.Row="3" Click="Creditos">CREDITOS</Button>
+        <Button Margin="256,0,269,10" Grid.Row="4" Content="SALIR" Click="Salir"/>
         <Button Margin="256,0,269,10" Grid.Row="1" Content="JUGAR" Click="Button_Click"/>
     </Grid>
 </Window>

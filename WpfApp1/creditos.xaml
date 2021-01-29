@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp1.creditos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="creditos" Height="450" Width="800" Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TextBlock Margin="238,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="329" Foreground="White" FontSize="56" HorizontalAlignment="Left" Grid.Row="0">Creado por :</TextBlock>
+        <TextBlock
+  Name="Nombres"
+  Margin="0,36,0,73" Height="100" FontSize="48" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Center">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBF0000" Offset="0.907"/>
+                    <GradientStop Color="#FFDEBEBE" Offset="0.223"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+  Javier Antelo y David Recuero
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+            Storyboard.TargetName="Nombres" 
+            Storyboard.TargetProperty="(TextBlock.Opacity)"
+            From="1.0" To="0.0" Duration="0:0:1" 
+            AutoReverse="True" RepeatBehavior="Forever" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+        <Button x:Name="Salir" Content="Volver al menú principal" HorizontalAlignment="Left" Margin="631,175,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="24" Click="Salir_Click"/>
+
+    </Grid>
+
+
+</Window>
