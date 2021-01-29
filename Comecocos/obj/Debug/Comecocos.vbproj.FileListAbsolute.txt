@@ -1,0 +1,6 @@
+C:\Comecocos\Comecocos\obj\Debug\Comecocos.vbprojAssemblyReference.cache
+C:\Comecocos\Comecocos\obj\Debug\MainWindow.g.vb
+C:\Comecocos\Comecocos\obj\Debug\Window1.g.vb
+C:\Comecocos\Comecocos\obj\Debug\Application.g.vb
+C:\Comecocos\Comecocos\obj\Debug\Comecocos_MarkupCompile.cache
+C:\Comecocos\Comecocos\obj\Debug\Comecocos_MarkupCompile.lref

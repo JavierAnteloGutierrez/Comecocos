@@ -26,6 +26,7 @@
 
         <Button Margin="256,0,269,10" Grid.Row="3">CREDITOS</Button>
         <Button Margin="256,0,269,10" Grid.Row="4" Content="SALIR"/>
-        <Button Margin="256,0,269,10" Grid.Row="1" Content="JUGAR"/>
+        <Button Margin="256,0,269,10" Grid.Row="1" Content="JUGAR" Click="OpenWindow"/>
     </Grid>
+    
 </Window>
